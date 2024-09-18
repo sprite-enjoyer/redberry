@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+
+  &__inputs {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__areaListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 0 32px 0;
+
+    &__titles {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+
+      &__title {
+        font-weight: 600;
+      }
+    }
+
+    &__areas {
+      position: relative;
+      display: flex;
+
+      &__right {
+      }
+    }
+  }
+}

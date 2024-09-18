@@ -1,0 +1,17 @@
+.root {
+  position: relative;
+
+  &__filterValues {
+    position: absolute;
+    top: 50px;
+
+    &__submitBtnWrapper {
+      width: 100%;
+      padding: 24px;
+    }
+
+    &__title {
+      display: block;
+    }
+  }
+}

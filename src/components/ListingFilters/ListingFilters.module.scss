@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  gap: 24px;
+
+  &__region {
+    &__option {
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
