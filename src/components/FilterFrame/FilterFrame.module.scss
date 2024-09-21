@@ -4,6 +4,8 @@
   &__filterValues {
     position: absolute;
     top: 50px;
+    background-color: white;
+    z-index: 2;
 
     &__submitBtnWrapper {
       width: 100%;

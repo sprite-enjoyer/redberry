@@ -1,11 +1,13 @@
 .root {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 20px;
 
-  &__region {
-    &__option {
-      display: flex;
-      gap: 5px;
-    }
+  &__filters {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__chipGroup {
   }
 }

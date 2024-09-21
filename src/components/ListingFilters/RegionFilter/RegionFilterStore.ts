@@ -13,6 +13,7 @@ class RegionFilterStore {
       regions: observable,
       temoporaryChosenRegions: observable,
       filterOpen: observable,
+      chosenRegions: observable,
       setRegions: action,
       addChosenRegion: action,
       removeChosenRegion: action,

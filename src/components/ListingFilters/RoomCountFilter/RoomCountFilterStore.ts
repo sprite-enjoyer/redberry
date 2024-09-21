@@ -2,7 +2,7 @@ import GenericFilterStore from "../../../stores/GenericFilterStore";
 
 class RoomCountFilterStore extends GenericFilterStore<number> {
   constructor() {
-    super(1, 1);
+    super(0, 0);
   }
 }
 

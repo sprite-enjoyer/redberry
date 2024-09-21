@@ -6,6 +6,7 @@ import MinMaxFilterStore from "../../../stores/MinMaxFilterStore";
 import { addUrlParam, getUrlParam } from "../../../misc/utils";
 import { useEffect } from "react";
 import { MinMaxFilterType } from "../../../misc/types";
+import { toJS } from "mobx";
 
 interface AreaFilterProps {
   minMaxFilterStore: MinMaxFilterStore;
@@ -13,10 +14,10 @@ interface AreaFilterProps {
 
 const AreaFilter = ({ minMaxFilterStore }: AreaFilterProps) => {
   useEffect(() => {
-    const priceUrlParamValue = getUrlParam("area");
-    if (priceUrlParamValue !== null) {
-      minMaxFilterStore.setTempFilterValue(priceUrlParamValue as MinMaxFilterType);
-      minMaxFilterStore.setFilterValue(priceUrlParamValue as MinMaxFilterType);
+    const areaUrlParam = getUrlParam("area");
+    if (areaUrlParam !== null) {
+      minMaxFilterStore.setTempFilterValue(areaUrlParam as MinMaxFilterType);
+      minMaxFilterStore.setFilterValue(areaUrlParam as MinMaxFilterType);
     }
   }, []);
 

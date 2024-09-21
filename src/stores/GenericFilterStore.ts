@@ -8,6 +8,7 @@ class GenericFilterStore<T> {
   constructor(initialValue: T, initialTempValue: T) {
     this.filterValue = initialValue;
     this.tempFilterValue = initialTempValue;
+
     makeObservable(this, {
       filterValue: observable,
       filterOpen: observable,
